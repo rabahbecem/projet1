@@ -1,0 +1,46 @@
+<div class=" items-center" align="center">
+
+ 
+  <span class="text-3xl font-bold  ">liste of users</span>
+  <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700 text-center">
+    
+    <div class="flow-root">
+      
+      <div class="flex flex-col align:center">
+       
+            <div class="overflow-x-auto shadow-md sm:rounded-lg">
+              <div class="inline-block min-w-full align-middle">
+                <div class="overflow-hidden ">
+                  <table class=" table-fixed ">
+                    <thead class="bg-gray-100 dark:bg-gray-700">
+                      <tr>
+                        <th scope="col" class="py-5 px-10 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                          id
+                        </th>
+                        <th scope="col" class="py-3 px-10 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                         user name
+                        </th>
+                        <th scope="col" class="py-3 px-10 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                          password
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
+                      <tr class="hover:bg-gray-100 dark:hover:bg-gray-700"  *ngFor="let user of users">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ user.id }}</td>
+                        <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{ user.username }}</td>
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ user.password }}</td>
+                        
+                      </tr>
+                  
+                    </tbody>
+                  </table>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+      
